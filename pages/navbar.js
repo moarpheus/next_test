@@ -16,4 +16,4 @@ function NabBar() {
   );
 }
 
-export default NabBar;
+export default NavBar;

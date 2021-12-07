@@ -1,9 +1,24 @@
-function HomPage() {
-    return (
-        <main>
-            <h1>My test blog</h1>
-        </main>
-    );
+import Link from "next/link";
+
+function HomePage() {
+  return (
+    <>
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>My about</h1>
+      </main>
+    </>
+  );
 }
 
-export default HomPage;
+export default HomePage;
