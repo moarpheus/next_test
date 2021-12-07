@@ -1,6 +1,13 @@
+import NavBar from "../components/NavBar";
+
 function App({ Component, pageProps }) {
   return (
-    <Component {... pageProps} />
+    <>
+      <header>
+        <NavBar />
+      </header>
+      <Component {...pageProps} />
+    </>
   );
 }
 
