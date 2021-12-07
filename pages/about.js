@@ -1,9 +1,16 @@
+import NavBar from "./NavBar";
+
 function AboutPage() {
-    return (
-        <main>
-            <h1>My about</h1>
-        </main>
-    );
+  return (
+    <>
+      <header>
+        <NavBar />
+      </header>
+      <main>
+        <h1>My about</h1>
+      </main>
+    </>
+  );
 }
 
 export default AboutPage;

@@ -1,21 +1,14 @@
 import Link from "next/link";
+import NavBar from "./NavBar";
 
 function HomePage() {
   return (
     <>
       <header>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/about">
-                <a>About</a>
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <NavBar />
       </header>
       <main>
-        <h1>My about</h1>
+        <h1>Home</h1>
       </main>
     </>
   );
