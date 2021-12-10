@@ -1,10 +1,13 @@
-# First post
+---
+date: "2021-04-21"
+title: "First Post"
+---
+This is my first post, written in Markdown.
 
-This is my first post in Markdown
-
-Here's some __bold__ text
+Here's some __bold text__.
 
 And a list:
 
-* one
-* two
+* One
+* Two
+* Three

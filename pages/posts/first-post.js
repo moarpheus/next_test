@@ -13,11 +13,7 @@ export async function getStaticProps() {
 function FirstPost({ post }) {
   return (
     <>
-      <Head>
-        <title>{post.title} - My blog</title>
-      </Head>
       <main>
-        <h1>{post.title}</h1>
         <article dangerouslySetInnerHTML={{__html: post.body }} />
       </main>
     </>
