@@ -2,27 +2,28 @@ import Link from "next/link";
 import { getPosts } from "../lib/posts";
 
 export async function getStaticProps() {
-  const slugs = await getPosts();
+  const posts = await getPosts();
   return {
-    props: { slugs },
+    props: { posts },
   }
 }
 
-function HomePage({ props }) {
-  console.log(props);
+function HomePage({ posts }) {
   return (
     <>
       <main>
         <h1>Home</h1>
       </main>
       <ul>
-        <li>
-          <Link href="posts/first-post">
-            <a>
-              First post
-            </a>
-          </Link>
-        </li>
+        {posts.map((post) => (
+          <li key={post.slug}>
+            <Link href={`/posts/${post.slug}`}>
+              <a>
+                {post.title}
+              </a>
+            </Link>
+          </li>
+        ))}
       </ul>
     </>
   );
