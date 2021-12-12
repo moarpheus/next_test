@@ -1,6 +1,15 @@
 import Link from "next/link";
+import { getPosts } from "../lib/posts";
 
-function HomePage() {
+export async function getStaticProps() {
+  const slugs = await getPosts();
+  return {
+    props: { slugs },
+  }
+}
+
+function HomePage({ props }) {
+  console.log(props);
   return (
     <>
       <main>
