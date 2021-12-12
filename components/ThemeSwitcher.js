@@ -1,10 +1,12 @@
+import React, { useState } from 'react';
+
 function ThemeSwitcher() {
-  const darkMode = true;
-  console.log(darkMode);
+  const [darkMode, setDarkMode] = useState(false);
   const text = darkMode ? 'Light Mode' : 'Dark Mode'
+  console.log(darkMode);
   return (
     <>
-      <button>{text}</button>
+      <button onClick={() => setDarkMode(!darkMode)}>{text}</button>
       <style jsx>{`
       button {
         background: none;
