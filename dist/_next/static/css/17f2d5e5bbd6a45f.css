@@ -1,0 +1,1 @@
+:root{--background-color:#fff;--link-color:darkred;--text-color:#000}body{font-family:sans-serif;color:var(--text-color);background-color:var(--background-color)}a{color:var(--link-color);text-decoration:none}a:focus,a:hover{text-decoration:underline}ul{list-style-type:none;padding:0}li{display:inline}li:not(:first-child){margin-left:.75rem}

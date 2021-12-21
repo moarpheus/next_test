@@ -15,7 +15,6 @@ export async function getStaticProps({params: { slug }}) {
   };
 }
 
-
 function PostPage({ post }) {
   return (
     <>
